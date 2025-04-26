@@ -14,7 +14,7 @@ func NewParcelStore(db *sql.DB) ParcelStore {
 
 func (s ParcelStore) Add(p Parcel) (int, error) {
 	// реализуйте добавление строки в таблицу parcel, используйте данные из переменной p
-
+	///
 	// верните идентификатор последней добавленной записи
 	return 0, nil
 }
@@ -22,7 +22,7 @@ func (s ParcelStore) Add(p Parcel) (int, error) {
 func (s ParcelStore) Get(number int) (Parcel, error) {
 	// реализуйте чтение строки по заданному number
 	// здесь из таблицы должна вернуться только одна строка
-
+	////
 	// заполните объект Parcel данными из таблицы
 	p := Parcel{}
 
@@ -32,7 +32,7 @@ func (s ParcelStore) Get(number int) (Parcel, error) {
 func (s ParcelStore) GetByClient(client int) ([]Parcel, error) {
 	// реализуйте чтение строк из таблицы parcel по заданному client
 	// здесь из таблицы может вернуться несколько строк
-
+	////
 	// заполните срез Parcel данными из таблицы
 	var res []Parcel
 
